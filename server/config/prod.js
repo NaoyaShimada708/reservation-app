@@ -1,3 +1,4 @@
 module.exports = {
-  DB_URI: ''
+  // herokuのconfigvarのキーに該当する
+  DB_URI: process.env.DB_URI
 }
