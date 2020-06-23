@@ -8,11 +8,15 @@ import { ProductListComponent } from './product/product-list/product-list.compon
 import { ProductDetailComponent } from './product/product-detail/product-detail.component';
 import { ProductComponent } from './product/product.component';
 import {HttpClientModule} from "@angular/common/http";
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
+    LoginComponent,
+    RegisterComponent,
     // ProductComponent
   ],
   imports: [
