@@ -10,7 +10,7 @@ import { ProductComponent } from './product/product.component';
 import {HttpClientModule} from "@angular/common/http";
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
-import { AuthComponent } from './auth/auth.component';
+// import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [

@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
-import {AuthComponent} from "./auth.component";
+// import {AuthComponent} from "./auth.component";
 import {RouterModule, Routes} from "@angular/router";
 import {ProductComponent} from "../product/product.component";
 import {ProductListComponent} from "../product/product-list/product-list.component";
@@ -11,20 +11,23 @@ import {AuthService} from "./auth.service";
 
 
 const routes: Routes = [
-  {
-    path: 'auth', component: AuthComponent,
-    children: [
-      {path: 'login', component: LoginComponent},
-      {path: 'register', component: RegisterComponent},
-    ]
-  }
+  // {
+  //   path: 'auth', component: AuthComponent,
+  //   children: [
+  //     {path: 'login', component: LoginComponent},
+  //     {path: 'register', component: RegisterComponent},
+  //   ]
+  // }
+  {path:'login',component:LoginComponent},
+  {path:'register',component:RegisterComponent},
+
 ];
 
 @NgModule({
   declarations: [
     LoginComponent,
     RegisterComponent,
-    AuthComponent,
+    // AuthComponent,
   ],
   imports: [
     RouterModule.forChild(routes),
