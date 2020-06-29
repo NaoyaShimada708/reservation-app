@@ -8,6 +8,7 @@ import {ProductComponent} from "../product/product.component";
 import {ProductListComponent} from "../product/product-list/product-list.component";
 import {ProductDetailComponent} from "../product/product-detail/product-detail.component";
 import {AuthService} from "./auth.service";
+import {FormsModule} from "@angular/forms";
 
 
 const routes: Routes = [
@@ -18,8 +19,8 @@ const routes: Routes = [
   //     {path: 'register', component: RegisterComponent},
   //   ]
   // }
-  {path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'register', component: RegisterComponent},
 
 ];
 
@@ -31,7 +32,8 @@ const routes: Routes = [
   ],
   imports: [
     RouterModule.forChild(routes),
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [
     AuthService,
